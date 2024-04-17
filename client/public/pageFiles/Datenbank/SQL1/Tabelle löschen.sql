@@ -1,0 +1,1 @@
+DROP TABLE abteilung, hotel, mitarbeiter, reisen CASCADE

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="5mm"
+   height="12mm"
+   viewBox="0 0 5 12"
+   version="1.1"
+   id="svg549"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   sodipodi:docname="Tür links.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview551"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="21.639106"
+     inkscape:cx="10.212991"
+     inkscape:cy="37.524655"
+     inkscape:window-width="1440"
+     inkscape:window-height="900"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs546" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g477"
+       inkscape:label="Tür zwei "
+       transform="translate(-0.36497655,-0.8453491)">
+      <path
+         style="display:inline;fill:#626f79;fill-opacity:1;stroke:none;stroke-width:17.601;stroke-opacity:1"
+         d="m 0.47253361,12.37574 3.46802999,0.22993 1.37335,-11.5992892 -3.44267,-0.0503 z"
+         id="path19975"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="display:inline;fill:#9edbe2;fill-opacity:1;stroke:none;stroke-width:17.601;stroke-opacity:1"
+         d="m 1.0383336,11.67713 2.58295,0.17554 1.2037,-10.1813392 -2.53279,-0.0501 z"
+         id="path19977"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="display:inline;fill:#3e4a53;fill-opacity:1;stroke:none;stroke-width:17.601;stroke-opacity:1"
+         d="m 4.0463136,5.4470708 0.0926,0.005 -0.1826,1.55887 -0.0992,0.002 z"
+         id="path19985"
+         sodipodi:nodetypes="ccccc"
+         inkscape:label="path19985" />
+    </g>
+  </g>
+</svg>

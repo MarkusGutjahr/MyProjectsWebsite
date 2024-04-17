@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Themenbereich Management</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheetMiniGameManagement.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
+  <script src="../JS/scriptMiniGameManagement.js"></script>
+</head>
+<body>
+
+<div id="info">
+  Info
+  <p id="info1" class="infoText">Die Vorbereitung auf die spätere Arbeitswelt verlangt nicht nur Wissen, sondern auch gutes Management und Erfahrungen bei großen Projekten. In diesem Bereich geht es vor allem um Zusammenarbeit, Kommunikation und Teamfähigkeit in einer Gruppe</p>
+  <p id="info2" class="infoText">Für eine Unternehmensgründung müssen viele Aspekte berücksichtigt werden. Dabei spielt mehr als nur der finanzielle Aspekt eine wichtige Rolle. Wie gründe ich ein gutes Start-Up Unternehmen? Und was passiert danach bzw. wie führe ich nun nach der Gründung ein erfolgreiches Unternehmen? Unter Berücksichtigung der Gesichtspunkte vom Bereich Management werden diese Fragen Schritt für Schritt beantwortet</p>
+  <button id="infoButton" class="infoText" onclick="buttonAction()">Weiter</button>
+</div>
+
+<h1>Themenbereich Management</h1>
+<div id="outer-box">
+  <div id="dragBox">
+    <div id="draggable1" class="draggable">
+      <img id="img1" class="img" src="../IMG/miniGameManagementBilder/13.png">
+      <p id="dt1" class="dragText">Planung</p>
+    </div>
+    <div id="draggable2" class="draggable">
+      <img id="img2" class="img" src="../IMG/miniGameManagementBilder/5.png">
+      <p id="dt2" class="dragText">Ziel</p>
+    </div>
+    <div id="draggable3" class="draggable">
+      <img id="img3" class="img" src="../IMG/miniGameManagementBilder/6.png">
+      <p id="dt3" class="dragText">Marketing</p>
+    </div>
+    <div id="draggable4" class="draggable">
+      <img id="img4" class="img" src="../IMG/miniGameManagementBilder/4.png">
+      <p id="dt4" class="dragText">Agile Entwicklung</p>
+    </div>
+    <div id="draggable5" class="draggable">
+      <img id="img5" class="img" src="../IMG/miniGameManagementBilder/2.png">
+      <p id="dt5" class="dragText">Analyse</p>
+    </div>
+    <div id="draggable6" class="draggable">
+      <img id="img6" class="img" src="../IMG/miniGameManagementBilder/3.png">
+      <p id="dt6" class="dragText">Budget</p>
+    </div>
+    <div id="draggable7" class="draggable">
+      <img id="img7" class="img" src="../IMG/miniGameManagementBilder/16.png">
+      <p id="dt7" class="dragText">Projektphasen</p>
+    </div>
+    <div id="draggable8" class="draggable">
+      <img id="img8" class="img" src="../IMG/miniGameManagementBilder/10.png">
+      <p id="dt8" class="dragText">Marktforschung</p>
+    </div>
+    <div id="draggable9" class="draggable">
+      <img id="img9" class="img" src="../IMG/miniGameManagementBilder/14.png">
+      <p id="dt9" class="dragText">Personal</p>
+    </div>
+    <div id="draggable10" class="draggable">
+      <img id="img10" class="img" src="../IMG/miniGameManagementBilder/8.png">
+      <p id="dt10" class="dragText">Wasserfall Entwicklung</p>
+    </div>
+    <div id="draggable11" class="draggable">
+      <img id="img11" class="img" src="../IMG/miniGameManagementBilder/15.png">
+      <p id="dt11" class="dragText">Teamarbeit</p>
+    </div>
+    <div id="draggable12" class="draggable">
+      <img id="img12" class="img" src="../IMG/miniGameManagementBilder/12.png">
+      <p id="dt12" class="dragText">Koordination</p>
+    </div>
+    <div id="draggable13" class="draggable">
+      <img id="img13" class="img" src="../IMG/miniGameManagementBilder/1.png">
+      <p id="dt13" class="dragText">Zeitmanagement</p>
+    </div>
+    <div id="draggable14" class="draggable">
+      <img id="img14" class="img" src="../IMG/miniGameManagementBilder/9.png">
+      <p id="dt14" class="dragText">Softwaretests</p>
+    </div>
+    <div id="draggable15" class="draggable">
+      <img id="img15" class="img" src="../IMG/miniGameManagementBilder/11.png">
+      <p id="dt15" class="dragText">Softwarearchitektur</p>
+    </div>
+    <div id="draggable16" class="draggable">
+      <img id="img16" class="img" src="../IMG/miniGameManagementBilder/7.png">
+      <p id="dt16" class="dragText">Dokumentation</p>
+    </div>
+  </div>
+
+  <table id="targetBox">
+    <tr>
+      <td id="target1" class="target"></td>
+      <td id="target2" class="target"></td>
+      <td id="target3" class="target"></td>
+      <td id="target4" class="target"></td>
+    </tr>
+    <tr>
+      <td id="target5" class="target"></td>
+      <td id="target6" class="target"></td>
+      <td id="target7" class="target"></td>
+      <td id="target8" class="target"></td>
+    </tr>
+    <tr>
+      <td id="target9" class="target"></td>
+      <td id="target10" class="target"></td>
+      <td id="target11" class="target"></td>
+      <td id="target12" class="target"></td>
+    </tr>
+    <tr>
+      <td id="target13" class="target"></td>
+      <td id="target14" class="target"></td>
+      <td id="target15" class="target"></td>
+      <td id="target16" class="target"></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="119mm"
+   height="31mm"
+   viewBox="0 0 119 31"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   sodipodi:docname="Pfeil.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5864438"
+     inkscape:cx="189.10219"
+     inkscape:cy="6.933747"
+     inkscape:window-width="1440"
+     inkscape:window-height="900"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#80ba24;fill-opacity:1;stroke-width:119.015;stroke-opacity:0.847059"
+       d="M 0.00186861,30.99458 51.864726,1.2958448 l 15.3172,0.021843 50.225964,29.6850652 -27.110743,0.0039 -30.221999,-16.346151 -32.097074,16.33754 z"
+       id="path236"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       style="fill:#73a721;fill-opacity:1;stroke-width:119.015;stroke-opacity:0.847059"
+       d="m 27.97663,30.997688 7.709764,-1.575614 26.59386,-13.60288 -2.210788,-1.16414 z"
+       id="path444"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#73a721;fill-opacity:1;stroke-width:119.015;stroke-opacity:0.847059"
+       d="M 51.861425,1.2965279 56.058871,0.00161685 71.289577,0.00198801 67.182343,1.3180849 Z"
+       id="path1757"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ace05a;fill-opacity:1;stroke-width:119.015;stroke-opacity:0.847059"
+       d="m 67.181705,1.3171673 50.214935,29.6800987 1.6123,-1.95743 L 71.288526,0.00228576 Z"
+       id="path1759"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>

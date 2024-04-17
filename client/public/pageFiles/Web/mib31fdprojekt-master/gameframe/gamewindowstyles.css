@@ -1,0 +1,215 @@
+#holder {
+    position: relative;
+    background: rgba(0, 0, 0, 0.9);
+    /*padding: 20px;*/
+    overflow: hidden;
+}
+#colorator {
+    margin-right: 50px;
+    /*background: rgba(0, 0, 0, 0.9);*/
+    width: 60px;
+    float: left;
+}
+#colorator > span {
+    border: thin solid DimGray;
+    display: inline-block;
+    overflow: hidden;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    opacity: .7;
+    border-radius: 3px;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    -moz-transition: -moz-transform .2s ease-out;
+    -o-transition: -o-transform .2s ease-out;
+    -ms-transition: -ms-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    box-shadow: 2px 2px 5px #888888;
+}
+#colorator >span:hover {
+    opacity: 1;
+    cursor:pointer;
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
+}
+#grid {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+
+    /*
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 2px 2px 5px #888888;
+    */
+}
+#grid > span {
+    display: inline-block;
+    color: GainsBoro;
+    width: calc(100% / var(--matrix-cols));
+    padding-bottom: calc(100% / var(--matrix-cols));
+    opacity: .6;
+    text-align: center;
+    vertical-align: middle;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    -moz-transition: -moz-transform .2s ease-out;
+    -o-transition: -o-transform .2s ease-out;
+    -ms-transition: -ms-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    overflow: hidden;
+
+    /*
+    overflow: hidden;
+    border: thin solid Gray;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #888888;
+     */
+
+
+    /*
+    transform: rotate(-45deg);
+     */
+}
+
+
+.LawnGreen {
+    background-color: LawnGreen !important;
+}
+.red {
+    background-color: red !important;
+}
+.orange {
+    background-color: orange !important;
+}
+.yellow {
+    background-color: yellow !important;
+}
+.green {
+    background-color: green !important;
+}
+.darkGreen {
+    background-color: darkgreen !important;
+}
+
+
+.active {
+    opacity: 1 !important;
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+
+/*
+--------------------------ENEMY-----------------------------
+ */
+
+#enemy-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.9);
+    border: thin solid DimGray; /* Match the border of grid tiles */
+    border-radius: 3px; /* Match the border-radius of grid tiles */
+    box-shadow: 2px 2px 5px #888888; /* Match the box-shadow of grid tiles */
+}
+
+.enemy {
+    width: 300%;
+    height: 300%;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity .25s ease-in-out, transform .2s ease-out;
+
+    /*
+    margin: 3px;
+    opacity: .7;
+    border-radius: 3px;
+    overflow: hidden;
+    color: white;
+    background-color: hotpink;
+    border: thin solid DimGray;
+    box-shadow: 2px 2px 5px #888888;
+     */
+}
+
+.enemy:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.health-bar-container {
+    position: absolute;
+    top: -0vh;
+    left: 200%;
+    transform: translateX(-50%);
+    width: 3vh;
+    height: 0.5vh;
+    background-color: #ddd;
+    border-radius: 1vh;
+    overflow: hidden;
+}
+
+.health-bar {
+    height: 100%;
+    background-color: red;
+    border-radius: 3px;
+    transition: width 0.2s ease-in-out;
+}
+
+
+/*
+------------------------------TOWER----------------------------------
+ */
+
+#tower-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.tower {
+    position: absolute;
+    zIndex: 5;
+    width: 9%;
+    height: 9%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    transition: opacity .25s ease-in-out, transform .2s ease-out;
+}
+
+.tower:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.arrow {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    background-image: url('../IMG/sprites/enemy/Arrow/10.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}

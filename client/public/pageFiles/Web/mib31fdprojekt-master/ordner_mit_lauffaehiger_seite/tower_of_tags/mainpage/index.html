@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"  class="animate-on-scroll">
+<head>
+  <meta charset="UTF-8">
+  <title >Towers of Tags - Der HTML & CSS Tower Defender</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" type="image/x-icon" href="../IMG/favicon.png">
+</head>
+<body  class="animate-on-scroll">
+
+  <nav id="mainnav"  class="animate-on-scroll">
+    <ul>
+      <li><a href="#section_levelauswahl">Levelauswahl</a></li>
+      <li><a href="#section_tutorial">Tutorial</a></li>
+      <li><a href="#section_ziele" >Ziele</a></li>
+      <li><a href="#section_html_css" >HTML & CSS</a></li>
+
+
+    </ul>
+  </nav>
+  <header>
+    <img src="../IMG/logotowerdefense.png" class="logo">
+    <div id="headertext"  class="animate-on-scroll">
+    <h1>Towers Of Tags</h1>
+      <p>the simple way to learn HTML & CSS</p><br>
+      <p>Erlebe eine fesselnde Fusion von Spielspaß und Programmierkunst mit "Towers of Tags"! <br>In diesem einzigartigen Tower Defense Game stehen nicht nur epische Schlachten bevor,<br>sondern auch eine Reise durch die Welt von HTML und CSS</p>
+      <a href="#section_html_css"><img src="../IMG/arrow.png" width="10%" class="center scroll scrollarrow"></a>
+    </div>
+  </header>
+
+  <!-- Divider ------------------------------------->
+  <div class="rechteck center"></div>
+  <!-- Divider ------------------------------------->
+
+<section id="section_html_css" class="animate-on-scroll">
+  <h2 class="frage animate-on-scroll">Was sind eigentlich HTML & CSS ?</h2>
+  <div id="infoboxes">
+  <div id="info_html" class="infobox  animate-on-scroll">
+    <h3>HTML</h3>
+    <strong>HTML</strong> (Hypertext Markup Language) bildet das Grundgerüst einer jeden Webseite. Es handelt sich um eine Auszeichnungssprache, die verwendet wird, um den Inhalt einer Webseite zu strukturieren und zu organisieren. HTML definiert die verschiedenen Elemente einer Seite, wie Überschriften, Absätze, Listen, Bilder und Links. Diese Elemente werden durch Tags markiert, die den Browsern mitteilen, wie die Seite dargestellt werden soll. <br>Durch die semantische Struktur von HTML wird nicht nur die visuelle Darstellung, sondern auch die Bedeutung einzelner Abschnitte einer Webseite klar und verständlich für sowohl Browser als auch Entwickler.
+  </div>
+  <div id="info_css" class="infobox animate-on-scroll">
+    <h3>CSS</h3>
+    <strong>CSS</strong> (Cascading Style Sheets) hingegen ist eine Designsprache, die es ermöglicht, das Aussehen und Layout einer Webseite zu gestalten. Mit CSS können Entwickler das Erscheinungsbild von HTML-Elementen verändern, indem sie verschiedene Stileigenschaften wie Farben, Schriftarten, Abstände und Positionen definieren. Durch die Trennung von Inhalt (HTML) und Design (CSS) wird die Wartung und Anpassung von Webseiten erleichtert. CSS erlaubt es, ein konsistentes und ansprechendes Design über alle Seiten einer Webseite hinweg zu erstellen, und ermöglicht somit eine flexible Anpassung des Erscheinungsbilds entsprechend den gestalterischen Anforderungen.
+  </div>
+  </div>
+</section>
+
+
+<section id="section_ziele" class="animate-on-scroll">
+<img src="../IMG/ziele.png" style="width:30%;">
+  <div id="ziele">
+    <h2>Ziele</h2>
+  <ul>
+    <li><h3>Spielerische Grundlagenvermittlung</h3><p>Entdecke die Grundlagen von HTML & CSS spielerisch in "Towers of Tags". Hier lernst du ohne Stress und durch praxisfokussierte Aufgaben, begleitet von kurzen theoretischen Einführungstexten.</p></li>
+    <li><h3>Präzises Wiederholen von Inhalten</h3><p>Spezifisch auf Themen ausgerichtete Levels ermöglichen gezieltes Wiederholen von Schwachstellen, um sicherzustellen, dass die erlernten Inhalte nachhaltig verstanden werden.</p></li>
+  </ul>
+  </div>
+</section>
+
+<section id="section_tutorial" class="animate-on-scroll">
+  <h2>Tutorial</h2>
+  <div id="infoboxes">
+
+  <div class="tutorial_infobox">
+    <img src="../IMG/tutorial_1.png" class="center">
+    <div class="center tutorialdot">1</div>
+    <p height="80%">Schreibe HTML Code in das Coding Panel um Tower im Spiel zusetzen und deine Gegner aufzuhalten</p>
+  </div>
+
+  <div class="tutorial_infobox">
+    <img src="../IMG/tutorial_2.png" class="center">
+    <div class="center tutorialdot">2</div>
+    Verschiedene HTML Tags erschaffen verschiedene Tower-Arten. Lerne welche Kombis dich zum Sieg führen und lerne dabei unterschwellig wie verschiedene HTML Elemente einzusetzen sind!
+
+  </div>
+  <div class="tutorial_infobox">
+    <img src="../IMG/tutorial_3.png" class="center">
+    <div class="center tutorialdot">3</div>
+    Gib den Towern Eigenschaften & Fähigkeiten mit CSS! Position, Größe, Farbe, den Möglichkeiten sind keine Grezen gesetzt!
+  </div>
+
+    <div class="tutorial_infobox">
+      <img src="../IMG/tutorial_4.png" class="center">
+
+      <div class="center tutorialdot">4</div>
+      Drück auf Play und probiere aus ob deine Kombination alle ankommenden Gegner besiegen kann oder ob du dich nochnal dransetzen musst!
+    </div>
+  </div>
+
+</section>
+
+<section id="section_levelauswahl"  class="animate-on-scroll">
+  <h2>Levelauswahl</h2>
+<div id="levelauswahl">
+  <div id="levelauswahl-links">
+  <div class="level" onclick="startGameWithLevel(0)"><h3>Level 0</h3>
+    <p>Einführung & Tutorial</p>
+  </div>
+  <div class="level" onclick="startGameWithLevel(1)"><h3>Level 1</h3>
+    <p>[HTML] Inline- und Block-Elemente<br>
+
+    </p>
+  </div>
+  <div class="level" onclick="startGameWithLevel(2)"><h3>Level 2</h3>
+    <p>[HTML] Semantische Elemente</p>
+  </div>
+  <div class="level" onclick="startGameWithLevel(3)"><h3>Level 3</h3>
+    <p>[HTML & CSS] IDs und Klasse</p>
+  </div>
+  <div class="level" onclick="startGameWithLevel(4)"><h3>Level 4</h3>
+  <p>[HTML & CSS] Positionierung</p>
+  </div>
+  </div>
+
+  <div id="levelauswahl-rechts">
+  <img src="../IMG/gamegraphic.png" width="100%" class="center"><br>
+  <button onclick="startGameWithLevel(5)" class="center">Start Endboss Level</button>
+  </div>
+</div>
+</section>
+
+<footer>&#xA9 Markus Gutjahr, Patricia Brosch & Razan Alkhouri<br>Erstellt für MIB31 Front End Development</footer>
+
+  <script src="js.js"></script>
+</body>
+</html>

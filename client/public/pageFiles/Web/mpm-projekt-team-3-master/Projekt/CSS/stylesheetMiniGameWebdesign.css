@@ -1,0 +1,280 @@
+body{
+    background-image: url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Computeransicht2_Weiß.svg"), url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Computeransicht.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 70%, 100%;
+    background-position-x: center;
+    //margin-top: -2%;
+    //background-size: contain;
+}
+
+
+h1{
+    position: relative;
+    text-align:center;
+    z-index: 3;
+    font-size: 5vw;
+    margin-top: 3%;
+}
+
+#outer-box {
+    width: 63%;
+    height: 38vw;
+    margin-left: 19%;
+    margin-top: -3%;
+    display: flex;
+}
+
+#target {
+    width: 85%;
+    height: 100%;
+    background-color: lightblue;
+    z-index: -1;
+    margin-top: 0%;
+}
+
+#dragBox{
+    flex-direction: column;
+    width: 10%;
+//height: 100%;
+    //padding-left: 1%;
+    font-family: Arial;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.draggable {
+    width: 100%;
+    height: 20%;
+    margin: 20px;
+    cursor: move;
+
+}
+
+#draggable1{
+    background-color: #84b819;
+}
+
+#draggable2{
+    background-color: pink;
+}
+
+#draggable3{
+    background-color: #fdda00;
+}
+
+#text{
+    visibility: hidden;
+    position: relative;
+    width: 80%;
+    height: 30%;
+    text-align:center;
+    z-index: 3;
+    font-size: 2vw;
+    margin-top: 4%;
+}
+
+#html{
+    position: absolute;
+}
+
+#css{
+    position: absolute;
+}
+
+#js{
+    position: absolute;
+}
+
+#htmlMitCss{
+    position: absolute;
+}
+
+#htmlMitJs{
+    position: absolute;
+}
+
+#cssMitJs{
+    position: absolute;
+}
+
+#htmlMitCssUndJs{
+    position: absolute;
+}
+
+#info{
+    position: absolute;
+    width: 20%;
+    height: 22.6vw;
+    z-index: 4;
+    color:white;
+    background: rgba(0, 0, 0, .25);
+    font-size: 2vw;
+    margin: 1% 0% 0% 0%;
+    text-decoration: underline;
+    border: 1px #000000 solid;
+}
+
+.infoText{
+    position: absolute;
+    font-size: 1.5vw;
+    //background-color: rgba(0, 0, 0, .25);
+    margin: 0% 0% 0% 0%;
+    top: 2vw;
+}
+
+#info1{
+    visibility: visible;
+}
+
+#info2{
+    visibility: hidden;
+}
+
+#info3{
+    visibility: hidden;
+}
+
+#infoButton{
+    position: absolute;
+    font-family: Arial;
+    background-color: rgba(0, 0, 0, .1);
+    z-index: 5;
+    margin-top:90%;
+    margin-left: 15%;
+}
+
+#frameRight{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+#frameLeft{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#extraInfo{
+    position: absolute;
+    width: 15%;
+    height: 22.6vw;
+    z-index: 4;
+    color:white;
+    font-size: 1.5vw;
+    margin: 1% 0% 0% 84%;
+}
+
+.extraInfoText{
+    position: absolute;
+    margin: 0% 0% 0% 0%;
+    padding: 2%;
+    visibility: hidden;
+    background: rgba(0, 0, 0, .25);
+    border: 1px #000000 solid;
+}
+
+
+@media(orientation: portrait){
+    body{
+        background-image: url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Computeransicht2_Weiß.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    h1{
+        position: relative;
+        text-align:center;
+        z-index: 3;
+        font-size: 7vw;
+        margin-top: 3%;
+    }
+
+    #outer-box {
+        width: 99%;
+        height: 200vw;
+        margin-left: 0%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #target {
+        width: 97%;
+        height: 50%;
+        background-color: lightblue;
+        z-index: -1;
+        margin-top: 0%;
+    }
+
+    #dragBox{
+        display: flex;
+        flex-direction: row;
+        width: 97%;
+        margin-left: 0%;
+    }
+
+    .draggable {
+        margin: 3% 1% 0% 0%;
+        width: 100%;
+        height: 200%;
+        cursor: move;
+        font-family: Arial;
+        font-size: 9vw;
+        text-align: center
+    }
+
+    #info{
+        position: absolute;
+        width: 95%;
+        height: 38.6vw;
+        z-index: 4;
+        color:white;
+        background: rgba(0, 0, 0, .25);
+        font-size: 6vw;
+        margin: 153% 0% 0% 0%;
+        text-decoration: underline;
+        border: 1px #000000 solid;
+    }
+
+    .infoText{
+        position: absolute;
+        font-size: 4vw;
+    //background-color: rgba(0, 0, 0, .25);
+        margin: 5% 0% 0% 0%;
+        top: 2vw;
+    }
+
+
+    #infoButton{
+        position: absolute;
+        font-family: Arial;
+        background-color: rgba(0, 0, 0, .1);
+        z-index: 5;
+        margin-top:30%;
+        margin-left: 29%;
+    }
+
+
+    #extraInfo{
+        position: absolute;
+        width: 95%;
+        height: 38.6vw;
+        z-index: 4;
+        color:white;
+        font-size: 4vw;
+        margin: 147% 0% 0% 0%;
+    }
+
+    .extraInfoText{
+        position: absolute;
+        margin: 0% 0% 0% 0%;
+        visibility: hidden;
+        background: rgba(0, 0, 0, .25);
+        border: 1px #000000 solid;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript</title>
+
+    <style>
+        #load:hover, #test:hover {
+            cursor: pointer;
+        }
+        #load{
+         margin: 10px 10px 10px 0px;
+        }
+    </style>
+
+    <script type="application/javascript">
+        function fetch_xml() {
+            fetch('../../XML/Datenstruktur.xml')
+                .then(response => response.text())
+                .then(xml_data_raw => {
+                    let parser = new DOMParser();
+                    let xmlDocument = parser.parseFromString(xml_data_raw, "application/xml");
+                    let datenstruktur = xmlDocument.getElementsByTagName('Datenstruktur');
+                    let load_element = document.getElementById("load");
+
+                    load_element.innerHTML = '';
+
+                    Array.from(datenstruktur).forEach(struktur => {
+                        Array.from(struktur.children).forEach(knoten => {
+                            //load_element.innerHTML += '<br><br>';
+
+                            Array.from(knoten.children).forEach(knoten_feld => {
+                                switch(knoten_feld.tagName) {
+                                    case 'titel':
+                                        load_element.innerHTML += '<h1>' + knoten_feld.innerHTML + '</h1>';
+                                        break;
+                                    case 'bild':
+                                        load_element.innerHTML += '<img alt="" style=\'max-width: 480px; height: auto;\' src=\'' + knoten_feld.getAttribute('src') + '\'></img>';
+                                        break;
+                                    case 'beschreibung':
+                                        load_element.innerHTML += '<p>' + knoten_feld.innerHTML + '</p>';
+                                        break;
+                                }
+                            });
+                        });
+                    });
+                })
+        }
+
+        function delete_element(element) {
+            element.remove();
+        }
+    </script>
+</head>
+<body>
+
+<p id="test" onclick="delete_element(this)">Dies ist ein Paragraph. Klicke mich an, und ich verschwinde!</p>
+<p id="zwei">Das ist ein anderer Paragraph! Ich bleibe sichtbar.</p>
+<p id="load" onclick="fetch_xml()">Klicke, um die Dateien laden.</p>
+
+</body>
+</html>

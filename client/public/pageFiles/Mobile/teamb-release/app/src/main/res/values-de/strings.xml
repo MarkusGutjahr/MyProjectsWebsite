@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DungeonRun</string>
+    <string name="hellowworld">Hello World! - Leo</string>
+    <string name="level">Level</string>
+    <string name="continuegame">" SPIEL FORTSETZEN"</string>
+    <string name="newgame">NEUES SPIEL</string>
+    <string name="cheatcode">Cheatcode</string>
+    <string name="play">Los</string>
+    <string name="use">Nutzen</string>
+</resources>

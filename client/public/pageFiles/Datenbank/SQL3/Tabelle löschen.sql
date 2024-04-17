@@ -1,0 +1,1 @@
+DROP TABLE film, filiale, kunde, filialehatfilme, verleih CASCADE

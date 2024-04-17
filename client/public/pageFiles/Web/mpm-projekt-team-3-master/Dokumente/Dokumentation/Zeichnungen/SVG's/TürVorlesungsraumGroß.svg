@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="7.0669999mm"
+   height="13.948mm"
+   viewBox="0 0 7.0669999 13.948"
+   version="1.1"
+   id="svg980"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="TürVorlesungsraumGroß.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview982"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="12.087093"
+     inkscape:cx="5.2535377"
+     inkscape:cy="26.309055"
+     inkscape:window-width="1823"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs977" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#b5adaa;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-miterlimit:3.8;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 0.02437648,0.10770316 6.82129002,-0.0413 0.24562,13.94808984 -6.72791002,-0.15667 z"
+       id="path97515"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#6e6966;fill-opacity:1;stroke:none;stroke-width:0.0957405"
+       d="m 6.9791965,7.7159632 c -0.39119,0.0101 -0.81927,0.0398 -1.21451,0.0301 0.0298,-0.0205 0.0691,-0.04 0.0249,-0.0681 -0.0352,-0.0206 -0.0778,-0.0367 -0.15753,-0.0298 -0.0819,0.0173 -0.15798,0.0491 -0.19485,0.14037 -0.0142,0.0376 -0.0268,0.0765 -0.0124,0.13611 0.009,0.0373 0.0815,0.0804 0.18241,0.0765 l 1.38415,-0.0187 z"
+       id="path27501"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:label="Türklinke Links" />
+  </g>
+</svg>

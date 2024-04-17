@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gamepagestyles.css">
+    <link rel="stylesheet" href="../mainpage/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+
+    <title>Embedded Webpage</title>
+
+</head>
+<body>
+
+<div id="main-container">
+
+    <div id="codeField">
+        <div id="header">
+        <a href="../mainpage/index.html">&#8592; Zurück</a>
+        <div id="levelueberschrift"><h1>Level 1</h1></div>
+        <div id="levelText"></div>
+            <button id="tutorialback">Einführungstext erneut zeigen</button>
+        </div>
+        <div id="player-health"></div>
+        <div id="codeMirror"></div>
+        <div id="buttons-container">
+            <button id="applyButton">Run Code</button>
+            <button id="enemyWaveButton">Start Enemy Wave</button>
+        </div>
+    </div>
+    <iframe id="embedded-iframe" src="../gameframe/gamewindow.html"></iframe>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+</div>
+
+<script src="gamepagescript.js"></script>
+<script src="codeEditor.js"></script>
+<script src="playerHealth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="240dp"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/inventory_equipment_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="55dp"
+        android:paddingTop="38dp"
+        android:paddingRight="40dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:layout_above="@+id/trashCanIcon"
+        android:layout_below="@+id/recyclerView1"
+        android:layout_centerInParent="true"
+        android:background="@drawable/inventory_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="40dp"
+        android:paddingTop="45dp"
+        android:paddingRight="45dp" />
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/trashCanIcon"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/infoIcon"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="9dp"
+        android:src="@drawable/ic_info"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/useButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/trashCanIcon"
+        android:background="@drawable/circle_button_background"
+        android:text="@string/use"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+    <ImageView
+        android:id="@+id/inventoryButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/rpg_inventory_button_icon" />
+
+    <TextView
+        android:id="@+id/itemViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:background="#1b1c1c"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:maxWidth="230dp"/>
+
+    <TextView
+        android:id="@+id/statsViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        android:background="#1b1c1c"
+        android:maxWidth="230dp"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</RelativeLayout >

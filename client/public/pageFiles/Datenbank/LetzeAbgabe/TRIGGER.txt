@@ -1,0 +1,32 @@
+DELIMITER //
+CREATE TRIGGER neueAbrpos
+AFTER INSERT ON Pflegeeinsatz
+BEGIN
+	INSERT INTO Abrechnungspos (APOS, ap_ANr, ap_PENr)
+		VALUES (s, p, n);
+	DECLARE s INTEGER DEFAULT 0;
+	DECLARE p INTEGER DEFAULT 0;
+	DECLARE n INTEGER DEFAULT 0;
+	DECLARE t INTEGER DEFAULT 0;
+	
+	if(
+		t = old.APOS +1;
+
+	SELECT APOS INTO s FROM t;
+	SELECT ap_ANr INTO p FROM Abrechnung WHERE a_PNr = pe_PNr;
+	SELECT PENr INTO n FROM Pflegeeinsatz WHERE PENr = ;
+
+	UPDATE hotel SET rsumme = s WHERE rnr = NEW.rnr;
+
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE TRIGGER updateAbr
+AFTER INSERT ON Abrechnungspos
+BEGIN
+	INSERT INTO Abrechnung ()
+		VALUES ();
+
+END //
+DELIMITER ;

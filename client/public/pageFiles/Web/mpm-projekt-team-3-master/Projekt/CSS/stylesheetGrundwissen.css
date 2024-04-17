@@ -1,0 +1,88 @@
+body{
+    background-image: url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Computeransicht2_Weiß.svg"), url("../IMG/SeminarRaumHandyVersionBeamer.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 70%, 100%;
+    background-position-x: center;
+//margin-top: -2%;
+//background-size: contain;
+}
+
+
+h1{
+    position: relative;
+    text-align:center;
+    z-index: 3;
+    font-size: 5vw;
+    margin-top: 3%;
+}
+
+#outer-box {
+    width: 63%;
+    height: 38vw;
+    margin-left: 19%;
+    margin-top: -3%;
+    display: flex;
+}
+
+#info {
+    position: absolute;
+    width: 60.4%;
+    height: 36vw;
+    z-index: 4;
+    color:white;
+    background: rgba(0, 0, 0, .25);
+    font-size: 3.2vw;
+    margin: -3% 0% 0% 19%;
+    text-decoration: underline;
+    border: 1px #000000 solid;
+}
+
+.infoText{
+    position: absolute;
+    font-size: 2.8vw;
+    //background: rgba(0, 0, 0, .25);
+    margin: 3% 0% 0% 0%;
+    top: 2vw;
+}
+
+@media(orientation: portrait){
+    body{
+        background-image: url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Computeransicht2_Weiß.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        height: 200vw;
+        width: 100%;
+    }
+
+
+    h1{
+        position: relative;
+        text-align:center;
+        z-index: 3;
+        font-size: 7vw;
+        margin-top: 3%;
+    }
+
+    #info{
+        position: absolute;
+        width: 99%;
+        height: 82%;
+        z-index: 4;
+        color:white;
+        background: rgba(0, 0, 0, .25);
+        font-size: 15vw;
+        margin: 0% 0% 0% 0%;
+        text-decoration: underline;
+        border: 1px #000000 solid;
+    }
+
+    .infoText{
+        position: absolute;
+        font-size: 7.8vw;
+    //background-color: rgba(0, 0, 0, .25);
+        margin: 17% 0% 0% 0%;
+        top: 2vw;
+    }
+
+}

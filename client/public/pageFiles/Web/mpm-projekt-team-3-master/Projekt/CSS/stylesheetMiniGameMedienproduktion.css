@@ -1,0 +1,309 @@
+body{
+
+    background-image: url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Computeransicht2_Weiß.svg"), url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Tonstudio.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 70%, 100%;
+    background-position-x: center;
+
+//background-size: contain;
+}
+
+h1{
+    position: relative;
+    text-align:center;
+    z-index: 3;
+    font-size: 4vw;
+    margin-top: 3%;
+}
+
+#outer-box {
+    width: 63%;
+    height: 40vw;
+    margin-left: 18.5%;
+    margin-top: -3%;
+}
+
+#targetBox{
+    width: 99%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.target{
+    height: 100%;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    z-index: -1;
+}
+
+#dragBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.draggable {
+    width: 7vw;
+    height: 7vw;
+    margin: 3px;
+    cursor: move;
+    background-color: #302a38;
+}
+
+#text{
+    visibility: hidden;
+    position: relative;
+    //width: 100%;
+    //height: 30%;
+    //text-align:center;
+    //z-index: 3;
+    font-size: 2vw;
+    margin: 4%;
+}
+
+#richtig{
+    position: absolute;
+}
+
+#falsch{
+    position: absolute;
+}
+
+#richtigDoppelt{
+    position: absolute;
+}
+
+#imgTon{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#imgFilm{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#imgDesign{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.textTargetBox{
+    position: absolute;
+
+    font-size: 2vw;
+    margin: 1% 0% 0% 10%;
+    font-weight: bold;
+    color: #80ba24;
+}
+
+#info{
+    position: absolute;
+    width: 20%;
+    height: 25.6vw;
+    z-index: 4;
+    color:white;
+    background: rgba(0, 0, 0, .25);
+    font-size: 2vw;
+    margin: 1% 0% 0% 0%;
+    text-decoration: underline;
+    border: 1px #000000 solid;
+}
+
+.infoText{
+    position: absolute;
+    font-size: 1.5vw;
+    //background-color: rgba(0, 0, 0, .25);
+    margin: 0% 0% 0% 0%;
+    top: 2vw;
+}
+
+#info1{
+    visibility: visible;
+}
+
+#info2{
+    visibility: hidden;
+}
+
+
+#infoButton{
+    position: absolute;
+    font-family: Arial;
+    background-color: rgba(0, 0, 0, .1);
+    z-index: 5;
+    margin-top:105%;
+    margin-left: 15%;
+}
+
+#extraInfo{
+    position: absolute;
+    width: 15%;
+    height: 22.6vw;
+    z-index: 4;
+    color:white;
+    font-size: 1.5vw;
+    margin: 1% 0% 0% 84%;
+}
+
+.extraInfoText{
+    position: absolute;
+    margin: 0% 0% 0% 0%;
+    padding: 2%;
+    visibility: hidden;
+    background: rgba(0, 0, 0, .25);
+    border: 1px #000000 solid;
+}
+.dragText{
+    font-size: 1.2vw;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-wrap: break-word;
+    width: 90%;
+    text-align:center;
+}
+
+
+@media(orientation: portrait){
+    body{
+        background-image: url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Computeransicht2_Weiß.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        height: 100%;
+        width: 127%;
+    }
+
+
+    h1{
+        position: relative;
+        text-align:center;
+        z-index: 3;
+        font-size: 6.5vw;
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    #outer-box {
+        width: 100%;
+        height: 200vw;
+        margin-left: 2%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #dragBox{
+        display: flex;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: -4%;
+        flex-wrap: wrap;
+    }
+
+    .draggable {
+    //background-image: url(../IMG/pexels-cottonbro-studio-5657727.jpg);
+    //background-size:  contain;
+    //background-repeat: no-repeat;
+        position: relative;
+        text-align: center;
+        cursor: move;
+        background-color: #302a38;
+        width: 24vw;
+        height: 24vw;
+        margin: 5px;
+    }
+
+    #targetBox{
+        width: 99%;
+        height: 31.4%;
+        margin-top: 1%;
+        flex-wrap: wrap;
+        border-spacing: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .target{
+        height: 100%;
+        flex-basis: 33%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        z-index: -1;
+        background-color: #80ba24;
+        border: 1px #000000 solid;
+        margin: 4% 0% 0% 0%;
+        padding: 0;
+    }
+
+    .dragText{
+        font-size: 5vw;
+        color: white;
+        position: absolute;
+        top: 41%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-wrap: break-word;
+        width: 90%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #info{
+        position: absolute;
+        width: 125%;
+        height: 50vw;
+        z-index: 4;
+        color:white;
+        background: rgba(0, 0, 0, .25);
+        font-size: 6vw;
+        margin: 145% 0% 0% 2%;
+        text-decoration: underline;
+        border: 1px #000000 solid;
+    }
+
+    .infoText{
+        position: absolute;
+        width: 100%;
+        font-size: 5vw;
+    //background-color: rgba(0, 0, 0, .25);
+        margin: 5% 0% 0% 0%;
+        top: 2vw;
+    }
+
+    #infoButton{
+        position: absolute;
+        font-family: Arial;
+        background-color: rgba(0, 0, 0, .1);
+        width: 20%;
+        z-index: 5;
+        margin-top: 32%;
+        margin-left: 30%;
+    }
+
+    #extraInfo{
+        position: absolute;
+        width: 128%;
+        height: 22.6vw;
+        z-index: 2;
+        color:white;
+        font-size: 6vw;
+        margin: 203% 0% 0% 0%;
+    }
+
+    .extraInfoText{
+        position: absolute;
+        margin: 0% 0% 0% 0%;
+        visibility: hidden;
+        background: rgba(0, 0, 0, .25);
+        border: 1px #000000 solid;
+    }
+}

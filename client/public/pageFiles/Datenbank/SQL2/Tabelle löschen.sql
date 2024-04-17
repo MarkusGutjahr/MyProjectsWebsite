@@ -1,0 +1,1 @@
+DROP TABLE mitarbeiter, projekt, projektmitarbeit CASCADE

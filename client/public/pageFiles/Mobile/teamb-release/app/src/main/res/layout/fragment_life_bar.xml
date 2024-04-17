@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.lifeBarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/heart0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifeProgressBarEnemy" />
+
+
+    <ProgressBar
+        android:id="@+id/lifeProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:max="20"
+        android:progress="6"
+        android:progressDrawable="@drawable/custom_progress_bar_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ProgressBar
+        android:id="@+id/lifeProgressBarEnemy"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:max="20"
+        android:progress="20"
+        android:progressDrawable="@drawable/custom_progress_bar_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifeProgressBar" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSpecial2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:max="360"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular_progress_bar1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/specialshield"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/specialshield"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarSpecial2"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarSpecial2"
+        app:layout_constraintStart_toStartOf="@+id/progressBarSpecial2"
+        app:layout_constraintTop_toTopOf="@+id/progressBarSpecial2"
+        android:elevation="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarSpecial1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:max="360"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarSpecial2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/specialattack"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/specialattack"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarSpecial1"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarSpecial1"
+        app:layout_constraintStart_toStartOf="@+id/progressBarSpecial1"
+        app:layout_constraintTop_toTopOf="@+id/progressBarSpecial1"
+        android:elevation="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/knight_m_idle_anim_f0"
+        app:layout_constraintBottom_toTopOf="@+id/lifeProgressBarEnemy"
+        app:layout_constraintEnd_toStartOf="@+id/lifeProgressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/heart1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScore" />
+
+    <ImageView
+        android:id="@+id/heart0"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ui_heart_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifeProgressBarEnemy" />
+
+    <ImageView
+        android:id="@+id/heart1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ui_heart_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart0" />
+
+    <ImageView
+        android:id="@+id/heart2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ui_heart_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart1" />
+
+    <ImageView
+        android:id="@+id/heart3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ui_heart_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart2" />
+
+    <ImageView
+        android:id="@+id/heart4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ui_heart_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

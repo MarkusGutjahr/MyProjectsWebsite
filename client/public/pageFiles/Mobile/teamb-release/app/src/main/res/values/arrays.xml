@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="floor_drawable">
+        <item>@drawable/floor_1</item>
+        <item>@drawable/floor_2</item>
+        <item>@drawable/floor_3</item>
+        <item>@drawable/floor_4</item>
+    </array>
+    <array name="wall_drawable">
+        <item>@drawable/wall_mid</item>
+        <item>@drawable/wall_hole_1</item>
+        <item>@drawable/wall_hole_2</item>
+    </array>
+    <array name="entrance_drawable">
+        <item>@drawable/floor_ladder</item>
+        <item>@drawable/floor_stairs</item>
+    </array>
+
+    <array name="knight_drawable">
+        <item>@drawable/knight_m_idle_anim_f0</item>
+        <item>@drawable/knight_m_idle_anim_f1</item>
+        <item>@drawable/knight_m_idle_anim_f2</item>
+        <item>@drawable/knight_m_idle_anim_f3</item>
+        <item>@drawable/knight_m_run_anim_f0</item>
+        <item>@drawable/knight_m_run_anim_f1</item>
+        <item>@drawable/knight_m_run_anim_f2</item>
+        <item>@drawable/knight_m_run_anim_f3</item>
+    </array>
+    <array name="skelet_drawable">
+        <item>@drawable/skelet_idle_anim_f0</item>
+        <item>@drawable/skelet_idle_anim_f1</item>
+        <item>@drawable/skelet_idle_anim_f2</item>
+        <item>@drawable/skelet_idle_anim_f3</item>
+        <item>@drawable/skelet_run_anim_f0</item>
+        <item>@drawable/skelet_run_anim_f1</item>
+        <item>@drawable/skelet_run_anim_f2</item>
+        <item>@drawable/skelet_run_anim_f3</item>
+    </array>
+    <array name="masked_orc_drawable">
+        <item>@drawable/masked_orc_idle_anim_f0</item>
+        <item>@drawable/masked_orc_idle_anim_f1</item>
+        <item>@drawable/masked_orc_idle_anim_f2</item>
+        <item>@drawable/masked_orc_idle_anim_f3</item>
+        <item>@drawable/masked_orc_run_anim_f0</item>
+        <item>@drawable/masked_orc_run_anim_f1</item>
+        <item>@drawable/masked_orc_run_anim_f2</item>
+        <item>@drawable/masked_orc_run_anim_f3</item>
+    </array>
+    <array name="chort_drawable">
+        <item>@drawable/chort_idle_anim_f0</item>
+        <item>@drawable/chort_idle_anim_f1</item>
+        <item>@drawable/chort_idle_anim_f2</item>
+        <item>@drawable/chort_idle_anim_f3</item>
+        <item>@drawable/chort_run_anim_f0</item>
+        <item>@drawable/chort_run_anim_f1</item>
+        <item>@drawable/chort_run_anim_f2</item>
+        <item>@drawable/chort_run_anim_f3</item>
+    </array>
+    <array name="chest_random_drawable">
+        <item>@drawable/chest_full_open_anim_f0</item>
+        <item>@drawable/chest_full_open_anim_f1</item>
+        <item>@drawable/chest_full_open_anim_f2</item>
+    </array>
+    <array name="chest_weapon_drawable">
+        <item>@drawable/chest_full_open_blue_anim_f0</item>
+        <item>@drawable/chest_full_open_blue_anim_f1</item>
+        <item>@drawable/chest_full_open_blue_anim_f2</item>
+    </array>
+    <array name="chest_armor_drawable">
+        <item>@drawable/chest_full_open_green_anim_f0</item>
+        <item>@drawable/chest_full_open_green_anim_f1</item>
+        <item>@drawable/chest_full_open_green_anim_f2</item>
+    </array>
+    <array name="chest_potion_drawable">
+        <item>@drawable/chest_full_open_purple_anim_f0</item>
+        <item>@drawable/chest_full_open_purple_anim_f1</item>
+        <item>@drawable/chest_full_open_purple_anim_f2</item>
+    </array>
+
+
+    <array name="big_demon_drawable">
+        <item>@drawable/big_demon_idle_anim_f0</item>
+        <item>@drawable/big_demon_idle_anim_f1</item>
+        <item>@drawable/big_demon_idle_anim_f2</item>
+        <item>@drawable/big_demon_idle_anim_f3</item>
+        <item>@drawable/big_demon_run_anim_f0</item>
+        <item>@drawable/big_demon_run_anim_f1</item>
+        <item>@drawable/big_demon_run_anim_f2</item>
+        <item>@drawable/big_demon_run_anim_f3</item>
+    </array>
+    <array name="big_zombie_drawable">
+        <item>@drawable/big_zombie_idle_anim_f0</item>
+        <item>@drawable/big_zombie_idle_anim_f1</item>
+        <item>@drawable/big_zombie_idle_anim_f2</item>
+        <item>@drawable/big_zombie_idle_anim_f3</item>
+        <item>@drawable/big_zombie_run_anim_f0</item>
+        <item>@drawable/big_zombie_run_anim_f1</item>
+        <item>@drawable/big_zombie_run_anim_f2</item>
+        <item>@drawable/big_zombie_run_anim_f3</item>
+    </array>
+    <array name="goblin_drawable">
+        <item>@drawable/goblin_idle_anim_f0</item>
+        <item>@drawable/goblin_idle_anim_f1</item>
+        <item>@drawable/goblin_idle_anim_f2</item>
+        <item>@drawable/goblin_idle_anim_f3</item>
+        <item>@drawable/goblin_run_anim_f0</item>
+        <item>@drawable/goblin_run_anim_f1</item>
+        <item>@drawable/goblin_run_anim_f2</item>
+        <item>@drawable/goblin_run_anim_f3</item>
+    </array>
+    <array name="ice_zombie_drawable">
+        <item>@drawable/ice_zombie_anim_f0</item>
+        <item>@drawable/ice_zombie_anim_f1</item>
+        <item>@drawable/ice_zombie_anim_f2</item>
+        <item>@drawable/ice_zombie_anim_f3</item>
+    </array>
+    <array name="lizard_f_drawable">
+        <item>@drawable/lizard_f_hit_anim_f0</item>
+        <item>@drawable/lizard_f_idle_anim_f0</item>
+        <item>@drawable/lizard_f_idle_anim_f1</item>
+        <item>@drawable/lizard_f_idle_anim_f2</item>
+        <item>@drawable/lizard_f_idle_anim_f3</item>
+        <item>@drawable/lizard_f_run_anim_f0</item>
+        <item>@drawable/lizard_f_run_anim_f1</item>
+        <item>@drawable/lizard_f_run_anim_f2</item>
+        <item>@drawable/lizard_f_run_anim_f3</item>
+    </array>
+    <array name="lizard_m_drawable">
+        <item>@drawable/lizard_m_hit_anim_f0</item>
+        <item>@drawable/lizard_m_idle_anim_f0</item>
+        <item>@drawable/lizard_m_idle_anim_f1</item>
+        <item>@drawable/lizard_m_idle_anim_f2</item>
+        <item>@drawable/lizard_m_idle_anim_f3</item>
+        <item>@drawable/lizard_m_run_anim_f0</item>
+        <item>@drawable/lizard_m_run_anim_f1</item>
+        <item>@drawable/lizard_m_run_anim_f2</item>
+        <item>@drawable/lizard_m_run_anim_f3</item>
+    </array>
+    <array name="muddy_drawable">
+        <item>@drawable/muddy_anim_f0</item>
+        <item>@drawable/muddy_anim_f1</item>
+        <item>@drawable/muddy_anim_f2</item>
+        <item>@drawable/muddy_anim_f3</item>
+    </array>
+    <array name="necromancer_drawable">
+        <item>@drawable/necromancer_anim_f0</item>
+        <item>@drawable/necromancer_anim_f1</item>
+        <item>@drawable/necromancer_anim_f2</item>
+        <item>@drawable/necromancer_anim_f3</item>
+    </array>
+    <array name="ogre_drawable">
+        <item>@drawable/ogre_idle_anim_f0</item>
+        <item>@drawable/ogre_idle_anim_f1</item>
+        <item>@drawable/ogre_idle_anim_f2</item>
+        <item>@drawable/ogre_idle_anim_f3</item>
+        <item>@drawable/ogre_run_anim_f0</item>
+        <item>@drawable/ogre_run_anim_f1</item>
+        <item>@drawable/ogre_run_anim_f2</item>
+        <item>@drawable/ogre_run_anim_f3</item>
+    </array>
+    <array name="orc_shaman_drawable">
+        <item>@drawable/orc_shaman_idle_anim_f0</item>
+        <item>@drawable/orc_shaman_idle_anim_f1</item>
+        <item>@drawable/orc_shaman_idle_anim_f2</item>
+        <item>@drawable/orc_shaman_idle_anim_f3</item>
+        <item>@drawable/orc_shaman_run_anim_f0</item>
+        <item>@drawable/orc_shaman_run_anim_f1</item>
+        <item>@drawable/orc_shaman_run_anim_f2</item>
+        <item>@drawable/orc_shaman_run_anim_f3</item>
+    </array>
+    <array name="orc_warrior_drawable">
+        <item>@drawable/orc_warrior_idle_anim_f0</item>
+        <item>@drawable/orc_warrior_idle_anim_f1</item>
+        <item>@drawable/orc_warrior_idle_anim_f2</item>
+        <item>@drawable/orc_warrior_idle_anim_f3</item>
+        <item>@drawable/orc_warrior_run_anim_f0</item>
+        <item>@drawable/orc_warrior_run_anim_f1</item>
+        <item>@drawable/orc_warrior_run_anim_f2</item>
+        <item>@drawable/orc_warrior_run_anim_f3</item>
+    </array>
+    <array name="pumpkin_dude_drawable">
+        <item>@drawable/pumpkin_dude_idle_anim_f0</item>
+        <item>@drawable/pumpkin_dude_idle_anim_f1</item>
+        <item>@drawable/pumpkin_dude_idle_anim_f2</item>
+        <item>@drawable/pumpkin_dude_idle_anim_f3</item>
+        <item>@drawable/pumpkin_dude_run_anim_f0</item>
+        <item>@drawable/pumpkin_dude_run_anim_f1</item>
+        <item>@drawable/pumpkin_dude_run_anim_f2</item>
+        <item>@drawable/pumpkin_dude_run_anim_f3</item>
+    </array>
+    <array name="swampy_drawable">
+        <item>@drawable/swampy_anim_f0</item>
+        <item>@drawable/swampy_anim_f1</item>
+        <item>@drawable/swampy_anim_f2</item>
+        <item>@drawable/swampy_anim_f3</item>
+    </array>
+    <array name="wogol_drawable">
+        <item>@drawable/wogol_idle_anim_f0</item>
+        <item>@drawable/wogol_idle_anim_f1</item>
+        <item>@drawable/wogol_idle_anim_f2</item>
+        <item>@drawable/wogol_idle_anim_f3</item>
+        <item>@drawable/wogol_run_anim_f0</item>
+        <item>@drawable/wogol_run_anim_f1</item>
+        <item>@drawable/wogol_run_anim_f2</item>
+        <item>@drawable/wogol_run_anim_f3</item>
+    </array>
+    <array name="zombie_drawable">
+        <item>@drawable/zombie_anim_f1</item>
+        <item>@drawable/zombie_anim_f2</item>
+        <item>@drawable/zombie_anim_f3</item>
+        <item>@drawable/zombie_anim_f10</item>
+    </array>
+
+</resources>

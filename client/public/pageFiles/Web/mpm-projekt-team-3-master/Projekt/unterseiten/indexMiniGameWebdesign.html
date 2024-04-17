@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themenbereich Webdesign</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheetMiniGameWebdesign.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
+    <script src="../JS/scriptMiniGameWebdesign.js"></script>
+</head>
+<body>
+
+<div id="info">
+    Info
+    <p id="info1" class="infoText">Im Bereich des Webdesigns wird, wie der Name schon sagt, sich auf das Design fokussiert. Es wird nicht nur eine Webseite programmiert, vielmehr wird es um die kreative Gestaltung einer Webseite gehen.</p>
+    <p id="info2" class="infoText">Die Wahlpflichtmodule konzentrieren sich neben der Verwaltung von Dokumenten hauptsächlich auf die Erstellung und Bedienung von touchbasierten Systemen. Im Fokus werden anhand neuester Technologien Web-Frameworks gestaltet und moderne Webanwendungen entwickelt</p>
+    <p id="info3" class="infoText">Welche neuen Technologien gibt es und wie werden sie angewendet? Ein Beispiel sind Lernapps oder moderne Lernangebote, die mittlerweile undenkbar sind. Hier wird Technologie und Lernen miteinander verbunden und praxisnah erlebt. </p>
+    <button id="infoButton" class="infoText" onclick="buttonAction()">Weiter</button>
+</div>
+
+<div id="extraInfo">
+    <p id="html" class="extraInfoText">HTML dient zur Strukturierung von Inhalten, wie beispielsweise Texte und Bilder. Die dabei entstehenden Dokumente sind die Grundlage des WWW und werden von Webbrowsern genutzt, um die Inhalte aller Seiten darzustellen.</p>
+    <p id="css" class="extraInfoText">CSS ist eine Formatierungssprache, welche dazu dient, Dokumente gestalterisch aufzuwerten. Dazu werden verschiedenste Style Elemente genutzt, um allen Wünschen der Nutzer nachzukommen. CSS allein kann allerdings keine Inhalte darstellen, es kann Inhalte lediglich verändern.</p>
+    <p id="js" class="extraInfoText">Java Script dient die Inhalte der HTML-Dokumente dynamisch darzustellen. Dabei können beispielsweise durch Benutzerinteraktionen neue Inhalte erscheinen oder auch angezeigte Elemente durch den Nutzer, oder auch von allein bewegt werden. JS allein ist nicht dazu gedacht, Inhalte darzustellen, es wird genutzt, um die erstellen Inhalte dynamisch für den Nutzer anzuzeigen.</p>
+    <p id="htmlMitCss" class="extraInfoText">Die Kombination aus HTML und CSS sorgt für eine visuell ansprechendere Gestaltung der Inhalte.</p>
+    <p id="htmlMitJs" class="extraInfoText">Die Kombination aus HTML und JS sorgt für eine dynamische Webseite, welche allerdings nicht visuell ansprechend für den Nutzer gestaltet ist.</p>
+    <p id="cssMitJs" class="extraInfoText">Die Kombination von CSS und JS ist nicht dazu gedacht, Inhalte darzustellen, sie werden genutzt, um die erstellen Inhalte sowohl visuell ansprechend, als auch dynamisch für den Nutzer anzuzeigen.</p>
+    <p id="htmlMitCssUndJs" class="extraInfoText">Die Kombination von HTML, CSS und JS ergeben visuell ansprechende und dynamische Inhalte, die nach den Wünschen der Nutzer eingerichtet werden können.</p>
+</div>
+
+
+<h1>Themenbereich Webdesign</h1>
+
+<div id="outer-box">
+    <div id="target">
+    </div>
+    <div id="dragBox">
+        <div id="draggable1" class="draggable">HTML</div>
+        <div id="draggable2" class="draggable">CSS</div>
+        <div id="draggable3" class="draggable">JS</div>
+    </div>
+</div>
+</body>
+</html>

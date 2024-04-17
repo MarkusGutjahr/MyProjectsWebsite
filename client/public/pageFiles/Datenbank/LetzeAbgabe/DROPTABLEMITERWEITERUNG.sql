@@ -1,0 +1,1 @@
+DROP TABLE evaluationskatalog, firmenfahrzeug, mitarbeiter, krankenkasse, pflegeleistungen, fahrzeugvergabe, patient, tourenplanung, tourenpos, pflegeeinsatz, abrechnung, abrechnungspos, evaluation, erkrankung, symptome, materialien, medizin, krankheitsfall, materialpos, medizinpos CASCADE 

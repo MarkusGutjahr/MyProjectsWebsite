@@ -1,0 +1,146 @@
+CREATE TABLE erkrankung(
+	ErkNr INTEGER, 
+	erk_Name VARCHAR(50),
+	CONSTRAINT pkerkrankung PRIMARY KEY (ErkNr)
+);
+
+CREATE TABLE symptome(
+	SymNr INTEGER, 
+	sym_Name VARCHAR(50), 
+	CONSTRAINT pksymptome PRIMARY KEY (SymNr),
+);
+
+CREATE TABLE krankheitsfall(
+	k_ErkNr INTEGER, 
+	k_SymNr INTEGER,
+	k_Staerke VARCHAR(20),
+	CONSTRAINT pkkrankheitsfall PRIMARY KEY (k_ErkNr, k_SymNr),
+	CONSTRAINT fkkrankheitsfallk_ErkNr FOREIGN KEY (k_ErkNr) REFERENCES erkrankung (ErkNr)
+);
+
+
+CREATE TABLE materialien(
+	MatNr INTEGER,
+	mat_Name VARCHAR(50), 
+	mat_Preis DECIMAL(10,2),
+	mat_Menge INTEGER,
+	CONSTRAINT pkmaterialien PRIMARY KEY (MatNr)
+);
+
+CREATE TABLE medizin(
+	MedNr INTEGER, 
+	med_Name VARCHAR(50),
+	med_Preis DECIMAL(10,2),
+	med_InhaltsMenge INTEGER,
+	CONSTRAINT pkmedizin PRIMARY KEY (MedNr)
+);
+
+
+CREATE TABLE materialpos(
+	MatPOS INTEGER, 
+	map_MatrNr INTEGER,
+	map_PLNr INTEGER,
+	CONSTRAINT pkmedizin PRIMARY KEY (),
+	CONSTRAINT fkmedizin FOREIGN KEY (map_MatrNr) REFERENCES materialien (MatNr),
+	CONSTRAINT fkmedizinposmap_PLNr FOREIGN KEY (map_PLNr) REFERENCES pflegeleistungen (PLNr)
+);
+
+CREATE TABLE medizinpos(
+	MedPOS INTEGER,
+	mep_MedNr INTEGER, 
+	mep_PLNr INTEGER,
+	CONSTRAINT pkmedizinpos PRIMARY KEY (MedPOS, mep_MedNr, mep_PLNr),
+	CONSTRAINT fkmedizinposMedNr FOREIGN KEY () REFERENCES medizin (MedNr),
+	CONSTRAINT fkmedizinposmep_PLNr FOREIGN KEY (mep_PLNr) REFERENCES pflegeleistungen (PLNr)
+);
+
+CREATE TABLE pflegeleistungen(
+	PLNr INTEGER,
+	pl_ErkNr INTEGER, 
+	pl_SymNr INTEGER, 
+	pl_Name VARCHAR(50), 
+	pl_Dauer TIME, 
+	CONSTRAINT pkpflegeleistungen PRIMARY KEY (PLNr),
+	CONSTRAINT fkmedizinpos FOREIGN KEY (pl_ErkNr, pl_SymNr) REFERENCES krankheitsfall (k_ErkNr, k_SymNr)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO erkrankung (ErkNr, erk_Name) VALUES
+(1, 'Fehlsichtigkeit'),
+(2, 'Grippe'),
+(3, 'Akute Bronchitis'),
+(4, 'Herzschwäche'),
+(5, 'Demenz'),
+(6, 'Multiple Sklerose'),
+(7, 'Migräne'),
+(8, 'Delir'),
+(9, 'Osteoporose'),
+(10, 'Parkinson'),
+(11, 'Schlaganfall'),
+(12, 'keine');
+
+INSERT INTO  symptome (SymNr, sym_Name) VALUES
+(1, 'Kopfschmerzen'),
+(2, 'Husten'),
+(3, 'Fieber'),
+(4, 'verschwommene Sicht'),
+(5, 'Gedächtnisverlust'),
+(6, 'Herzschmerzen'),
+(7, 'Auschlag'),
+(8, 'Zittern'),
+(9, 'Ohnmacht'),
+(10, 'Wahrnehmungsverlust'),
+(11, 'Gelenkschmerzen'),
+(12, 'keine');
+
+INSERT INTO krankheitsfall (k_ErkNr, k_SymNr, k_Staerke) VALUES
+(1, 4, 'stark'),
+(1, 4, 'schwach'),
+(2, 3, 'stark'),
+(2, 3, 'schwach'),
+(3, 2, 'mittel'),
+(5, 5, 'anfang'),
+(11, 6, 'stark'),
+(7, 1, 'stark'),
+(7, 1, 'schwach'),
+(10, 8, 'stark'),
+(10, 8, 'mittel'),
+(10, 8, 'schwach'),
+(4, 6, 'schwach'),
+(4, 9, 'kurz');
+
+INSERT INTO materialien (MatNr, mat_Name, mat_Preis, mat_Menge) VALUES
+();
+
+INSERT INTO medizin (MedNr, med_Name, med_Preis, med_InhaltsMenge) VALUES
+();
+
+INSERT INTO materialpos (MatPOS, map_MatrNr, map_PLNr) VALUES
+();
+
+INSERT INTO medizinpos (MedPOS, mep_MedNr, mep_PLNr) VALUES
+();
+
+INSERT INTO pflegeleistungen (PLNr, pl_ErkNr, pl_SymNr, pl_Name, pl_Dauer) VALUES
+();
+
+
+INSERT INTO pflegeleistungen (PLNr, pl_Name, pl_Dauer, pl_Kosten, pl_Beschreibung, pl_Anwendungsfall, pl_Materialien) VALUES
+(1, 'COVID-Erstimpfung', '00:15:00', 50.00, '1. Impfung (Biontech)', 'Corona-Schutzimpfung', 'Spritze, Biontech-Impfmittel, Pflaster, Desinfektionsmittel, Gummihandschuhe'),
+(2, 'COVID-Auffrischimpfung', '00:15:00', 50.00, '2. Booster (Biontech)', 'Corona-Schutzimpfung', 'Spritze, Biontech-Impfmittel, Pflaster, Desinfektionsmittel, Gummihandschuhe'),
+(3, 'Putzen', '01:20:00', 60.00, 'Haushalt aufräumen und putzen', 'fehlende körperliche kraft', 'Gummihandschuhe, Putzlappen, Putzmittel/reiniger'),
+(4, 'Körperpflege', '00:40:00', 80.00, 'Ganzkörperpflege', 'fehlende körperliche kraft', 'Shampoo, Duschgel, Gummihandschuhe, Schwamm'),
+(5, 'Verbandswechsel', '00:30:00', 30.00, 'alte Verbände entfernen, neue umbinden', 'Thrombose', 'Verband, Verbandspad, Gummihandschuhe, Reinigungsmittel, Reinigungstücher')
+;

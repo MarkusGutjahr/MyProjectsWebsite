@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Themenbereich Medienproduktion</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/stylesheetMiniGameMedienproduktion.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
+  <script src="../JS/scriptMiniGameMedienproduktion.js"></script>
+</head>
+<body>
+
+<div id="info">
+  Info
+  <p id="info1" class="infoText">Von der Analyse eines Musikvideos bis zur eigenen Produktion eines Musikvideos. Was passiert hinter den Kulissen eines Musikvideos, was hinter einem Liveauftritt? Damit verbunden ist die Produktion und Technik von Film und Studio. In einem Studio wird professionell mit Kamera, Mikrofon und Licht gearbeitet</p>
+  <p id="info2" class="infoText">Vertiefung in Foto und Bild und Auswirkung verschiedener Faktoren auf dieser. Dabei geht es nicht nur um technisches Wissen und dem Umgang mit Kamera, sondern auch um kreative und gestalterische Fähigkeiten, um am Ende eindrucksvolle Bilder zu kreieren </p>
+  <button id="infoButton" class="infoText" onclick="buttonAction()">Weiter</button>
+</div>
+
+
+<div id="extraInfo">
+  <p id="richtig" class="extraInfoText">Das hast du gut gemacht!</p>
+  <p id="falsch" class="extraInfoText">Das ist leider falsch, versuche es erneut.</p>
+  <p id="richtigDoppelt" class="extraInfoText">Das hast du gut gemacht!, probier es weiter, vielleicht gibt es noch eine weitere Lösung.</p>
+</div>
+
+
+<h1>Themenbereich Medienproduktion</h1>
+
+<div id="outer-box">
+  <div id="dragBox">
+    <div id="draggable1" class="draggable">
+      <p class="dragText">Kamera</p>
+    </div>
+    <div id="draggable2" class="draggable">
+      <p class="dragText">Mikrofon</p>
+    </div>
+    <div id="draggable3" class="draggable">
+      <p class="dragText">Lampe</p>
+    </div>
+    <div id="draggable4" class="draggable">
+      <p class="dragText">Ton-Mischer</p>
+    </div>
+    <div id="draggable5" class="draggable">
+      <p class="dragText">Bild-Mischer</p>
+    </div>
+    <div id="draggable6" class="draggable">
+      <p class="dragText">Farbraum</p>
+    </div>
+    <div id="draggable7" class="draggable">
+      <p class="dragText">Bildbearbeitung</p>
+    </div>
+    <div id="draggable8" class="draggable">
+      <p class="dragText">Perspektive</p>
+    </div>
+    <div id="draggable9" class="draggable">
+      <p class="dragText">Sounddesign</p>
+    </div>
+  </div>
+  <div id="targetBox">
+    <div id="target1" class="target">
+      <p class="textTargetBox">Ton-Technik</p>
+      <!-- Link zum Bild (kein copyright) https://www.pexels.com/de-de/foto/person-sitzung-monitor-drinnen-5657727/ -->
+      <img id="imgTon" src="../IMG/pexels-alexander-dummer-134469.jpg">
+    </div>
+    <div id="target2" class="target">
+      <p class="textTargetBox">Film-Technik</p>
+      <!-- Link zum Bild (kein copyright) https://www.pexels.com/de-de/foto/fotostudio-mit-weissem-holzernen-gerahmten-wandspiegel-134469/ -->
+      <img id="imgFilm" src="../IMG/pexels-cottonbro-studio-5657727.jpg">
+    </div>
+    <div id="target3" class="target">
+      <p class="textTargetBox">Mediendesign</p>
+      <!-- Link zum Bild (kein copyright) https://www.pexels.com/de-de/foto/silber-imac-auf-braunem-holztisch-326502/ -->
+      <img id="imgDesign" src="../IMG/pexels-tranmautritam-326502.jpg">
+    </div>
+  </div>
+</div>
+</body>
+</html>

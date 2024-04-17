@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:3000/pageFiles/Software/BlackJack/" href="blackjack.jnlp">
+    <information>
+        <title>Blackjack</title>
+        <vendor>My Project</vendor>
+        <description>My Java Blackjack mini game</description>
+        <icon href=""/>
+    </information>
+    <resources>
+        <j2se version="1.8+"/>
+        <jar href="http://localhost:3000/pageFiles/Software/BlackJack/blackjack.jar" main="true"/>
+    </resources>
+    <application-desc main-class="miniprojektBlackJack.Spielablauf"/>
+</jnlp>

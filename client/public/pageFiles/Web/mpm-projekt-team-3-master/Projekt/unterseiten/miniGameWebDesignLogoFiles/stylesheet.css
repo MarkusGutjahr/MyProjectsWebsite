@@ -1,0 +1,58 @@
+#line{
+    margin-top: 3.3vw;
+    margin-left: -10vw;
+    float: left;
+    width: 0.5vw;
+    height: 17vw;
+    background-color: #4a5c66;
+}
+#t{
+    margin-top: 3.3vw;
+    margin-left: -6vw;
+    float: left;
+    width: 13vw;
+}
+#h{
+    margin-top: 3.3vw;
+    margin-left: 2vw;
+    float: left;
+    width: 13vw;
+}
+#m{
+    margin-top: 3.3vw;
+    margin-left: 2vw;
+    float: left;
+    width: 16.1vw;
+}
+#targetBox{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-spacing: 1.5vw 1.5vw;
+    float: left;
+    margin-top: 2vw;
+
+}
+.target{
+    height: 3vw;
+    width: 3vw;
+    background-color: #4a5c66;
+    z-index: -1;
+    margin: 0%;
+    padding: 0%;
+}
+#target1{
+    visibility: hidden;
+    background-color: #add8e6;
+}
+#target7{
+    background-color: #80ba24;
+}
+#target11{
+    background-color: #80ba24;
+}
+#target12{
+    background-color: #80ba24;
+}

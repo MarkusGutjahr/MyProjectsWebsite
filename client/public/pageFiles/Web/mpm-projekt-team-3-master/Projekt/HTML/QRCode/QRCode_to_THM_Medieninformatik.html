@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Quelle: https://codepen.io/khoj-badami/pen/WNoQGXg -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>QR Code</title>
+
+       <script>
+        function updateQRCode() {
+
+            let url = window.location.href;
+
+            var qrcode = new QRCode("qr_code", {
+                text: url,
+                width: 256,
+                height: 256,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        }
+    </script>
+
+</head>
+<body>
+<h3>Dieser QR-Code führt zum Studiengang Medieninformatik</h3>
+
+<div id="qr_code"></div>
+<p>Quelle: <a href="https://codepen.io/khoj-badami/pen/WNoQGXg">https://codepen.io/khoj-badami/pen/WNoQGXg</a> </p>
+<script>
+    updateQRCode();
+</script>
+</body>
+</html>

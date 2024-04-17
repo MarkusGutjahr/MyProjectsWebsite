@@ -1,0 +1,45 @@
+<!ELEMENT Datenstruktur (themaKnoten*)>
+
+        <!ELEMENT themaKnoten (titel, bild, beschreibung, jsFunktion, inhalt)>
+        <!ATTLIST themaKnoten
+                id CDATA #REQUIRED
+                Type (Bachelor|Master)#REQUIRED
+                >
+
+        <!ELEMENT titel (#PCDATA)>
+        <!ATTLIST titel
+                >
+
+        <!ELEMENT bild (#PCDATA)>
+        <!ATTLIST bild
+                src CDATA
+                >
+
+        <!ELEMENT beschreibung (#PCDATA)>
+        <!ATTLIST beschreibung
+                >
+
+        <!ELEMENT jsFunktion (#PCDATA)>
+        <!ATTLIST jsFunktion
+                src CDATA
+                >
+
+        <!ELEMENT inhalt (html, svg, videodatei)>
+        <!ATTLIST inhalt
+                src CDATA
+                >
+
+        <!ELEMENT html (#PCDATA)>
+        <!ATTLIST html
+                src CDATA
+                >
+
+        <!ELEMENT svg (#PCDATA)>
+        <!ATTLIST svg
+                src CDATA
+                >
+
+        <!ELEMENT videodatei (#PCDATA)>
+        <!ATTLIST videodatei
+                src CDATA
+                >

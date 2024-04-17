@@ -1,0 +1,264 @@
+
+.rainbow-text {
+    font-family: Arial;
+}
+
+header{
+
+    margin: 6% 0% 0% 0%;
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+
+}
+
+#minigame{
+    margin: 0%;
+}
+
+#alles{
+
+    display: flex;
+    width: 55%;
+    margin: -1% auto;
+}
+
+
+body{
+    background-image: url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Computeransicht2_Weiß.svg"), url("../../Dokumente/Dokumentation/Zeichnungen/SVG's/Computeransicht.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 70%, 100%;
+    background-position-x: center;
+}
+
+#field{
+    height: 100%;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-wrap: wrap;
+    //background-color: #2CC3B5;
+    width: 40%;
+    margin: 4% auto 0% 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: medium;
+}
+
+#outer-box {
+
+    margin-top: 4%;
+    flex-basis: 25%;
+    width: 99%;
+    height: 32vw;
+    margin-left: 1%;
+    display: flex;
+}
+
+
+#arrow{
+
+//width: 100%;
+//height: 100%;
+    flex-basis: 5%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    z-index: -1;
+
+}
+
+#target {
+    border-color: black;
+    border-style: solid;
+    border-width: medium;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+.process{
+    flex-basis: 20%;
+    margin: 1.2%;
+    flex-grow: 3;
+    flex-shrink: 3;
+    height: 5%;
+    background-color: #80ba24;
+    //width: 20%;
+    text-align: center;
+
+}
+
+#dragBox{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 30%;
+//height: 100%;
+    padding-left: 1%;
+
+}
+.move{
+
+    background-color: #fed07d;
+}
+
+.dragp{
+
+    margin: auto;
+    width: fit-content;
+}
+
+button{
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: burlywood;
+    width: 100%;
+
+    margin: 15px;
+    cursor: pointer;
+
+    border-color: black;
+    border-style: solid;
+    border-width: medium;
+}
+
+
+
+.draggable {
+    /* Inhalt vertikal mittig platzieren */
+    text-align:center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    border-color: black;
+    border-style: solid;
+    border-width: medium;
+    width: 100%;
+    margin: 20px;
+    cursor: move;
+    margin: 15px;
+
+}
+
+#draggable1{
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #fed07d;
+}
+
+#draggable2{
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #80ba24;
+}
+
+
+#resetbutton{
+
+    background-color: gray;
+
+}
+
+.white,.black {
+
+    flex-basis: 12.5%;
+    flex-grow: 2;
+    flex-shrink: 1;
+    height: 4vw;
+    background-color: white;
+}
+.black{
+    background-color: black;
+}
+#coin{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+@media(orientation: portrait) {
+
+    html{
+        height: 100%;
+        width: 100%;
+    }
+
+
+    body{
+        background-image: none;
+        background-size: 100%;
+        background-position-x: center;
+
+    }
+    #alles{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        height: 100vw;
+    }
+
+    #dragBox{
+        margin-left: -2%;
+        width: 15%;
+    }
+
+    #arrow{
+        width: 20%;
+        margin: auto;
+    }
+    #field{
+        margin: auto;
+        width: 90%;
+        height: 80%;
+    }
+
+
+    #target{
+        margin: auto 1% auto 3%;
+        width: 70%;
+        height: 80vw;
+    }
+
+    .white,.black {
+
+        flex-basis: 12.5%;
+        flex-grow: 2;
+        flex-shrink: 1;
+        height: 10vw;
+    }
+
+
+    #coin{
+        width: 100%;
+        height: 100%;
+    }
+
+    button{
+        flex-basis: 25%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-color: burlywood;
+        width: 100%;
+
+        margin: 15px;
+        cursor: pointer;
+
+        border-color: black;
+        border-style: solid;
+        border-width: medium;
+    }
+
+}

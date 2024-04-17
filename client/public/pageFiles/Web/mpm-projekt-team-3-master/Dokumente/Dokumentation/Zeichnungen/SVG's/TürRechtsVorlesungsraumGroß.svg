@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="7.4949999mm"
+   height="10.957mm"
+   viewBox="0 0 7.4949999 10.957"
+   version="1.1"
+   id="svg1200"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="TürRechtsVorlesungsraumGroß.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1202"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="12.087093"
+     inkscape:cx="40.580477"
+     inkscape:cy="23.744336"
+     inkscape:window-width="1823"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1184" />
+  <defs
+     id="defs1197" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1184"
+       transform="translate(-132.17573,-70.270444)">
+      <path
+         style="fill:#b5adaa;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-miterlimit:3.8;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 132.66768,70.302048 7.01748,0.0389 -0.5098,10.30037 -0.0354,0.593999 -1.18297,0.02922 -0.0159,-0.0075 -5.75085,0.002 z"
+         id="path149131"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:#595756;fill-opacity:1;stroke:none;stroke-width:0.11543"
+         d="m 132.37663,77.079648 c 0.41539,0.0932 0.89177,0.079 1.29227,0.0648 -0.0573,0.006 -0.13227,-0.083 -0.11313,-0.1162 0.0156,-0.034 0.14964,-0.0433 0.2252,-0.006 0.0823,0.0442 0.16126,0.11744 0.14099,0.19974 -0.04,0.14648 -0.114,0.1647 -0.19023,0.17443 l -1.23344,0.0238 c -0.0693,0.002 -0.12813,-0.0276 -0.14863,-0.0873 z"
+         id="path26891"
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:label="Türklinke rechts" />
+    </g>
+  </g>
+</svg>
