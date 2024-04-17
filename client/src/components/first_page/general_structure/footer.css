@@ -1,0 +1,15 @@
+.footer {
+
+    background-color: #181818;
+    color: white;
+    padding: 1%;
+    height: 5%;
+    flex-shrink: 0;
+}
+
+.footer a {
+    font-size: 1.2vh;
+    text-decoration: none;
+    margin-right: 1vw;
+    color: white;
+}

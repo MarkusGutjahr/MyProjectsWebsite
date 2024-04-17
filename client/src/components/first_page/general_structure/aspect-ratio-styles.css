@@ -1,0 +1,17 @@
+@media (max-aspect-ratio: 1/1) {
+    .main-page {
+        padding: 1%;
+    }
+
+    .box {
+        width: 20vh;
+        height: 20vh;
+        font-size: 2vh;
+        border-radius: 9vw;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+}

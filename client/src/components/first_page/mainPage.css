@@ -1,0 +1,62 @@
+.main-page {
+    display: flex;
+    padding: 2%;
+    flex: 1;
+    height: 85%;
+}
+
+#logoprev {
+    background-image: url('/public/pageFiles/Mediengestaltung/LogoPreview.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#designprev {
+    background-image: url('/public/pageFiles/Mediengestaltung/WebDesignPreview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+#webIMG {
+    background-image: url('/public/pageFiles/Web/webIMG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#softwareIMG {
+    background-image: url('/public/pageFiles/Software/softwareIMG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mobileIMG {
+    background-image: url('/public/pageFiles/Mobile/mobileIMG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#datenbankIMG {
+    background-image: url('/public/pageFiles/Datenbank/datenbankIMG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mediengestaltungIMG {
+    background-image: url('/public/pageFiles/Mediengestaltung/mediengestaltungIMG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#audiovideoIMG {
+    background-image: url('/public/pageFiles/AudioVideo/audiovideoIMG.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#modellIMG {
+    background-image: url('/public/pageFiles/Modell/modellIMG.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

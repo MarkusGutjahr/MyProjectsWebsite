@@ -1,0 +1,57 @@
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.box {
+    width: 35vh;
+    height: 35vh;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    margin: 1vw;
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    border-radius: 4vh;
+}
+
+.box-text {
+    text-shadow: 1px 1px 1px #000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+
+.bigbox {
+    width: 40vw;
+    height: 40vw;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 1%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.glow {
+    box-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #d4bee6,
+    0 0 20px #d4bee6,
+    0 0 25px #a959eb,
+    0 0 30px #a959eb,
+    0 0 35px #a020f0,
+    0 0 40px #a020f0;
+}
