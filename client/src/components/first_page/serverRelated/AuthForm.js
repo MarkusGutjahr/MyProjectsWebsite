@@ -12,11 +12,15 @@ const AuthForm = ({ onLogin }) => {
             if (action === 'register') {
                 response = await axios.post('/register', { username, password });
                 console.log('Registration successful:', response.data);
+
+                const { token } = response.data;
+                localStorage.setItem('token', token);
+                onLogin(username, password);
             } else if (action === 'login') {
                 response = await axios.post('/login', { username, password });
                 const { token } = response.data;
-                localStorage.setItem('token', token); // Store token in localStorage
-                onLogin(); // Call parent component's login handler
+                localStorage.setItem('token', token);
+                onLogin();
             }
         } catch (error) {
             setError(error.response.data.message);

@@ -20,16 +20,10 @@ const Header = () => {
     const location = useLocation();
     const menuRef = useRef();
     const loginRef = useRef();
+    const loginPopRef = useRef();
     const [showMenu, setShowMenu] = useState(false);
 
     const [showLogin, setShowLogin] = useState(false);
-    const [showRegister, setShowRegister] = useState(false);
-
-    const [showRegisterPopup, setShowRegisterPopup] = useState(false);
-    const [showLoginPopup, setShowLoginPopup] = useState(false);
-
-    const [showLoginButton, setShowLoginButton] = useState(true);
-    const [showRegisterButton, setShowRegisterButton] = useState(true);
 
     const headerRef = useRef();
     const [showHeader, setShowHeader] = useState(true);
@@ -50,27 +44,6 @@ const Header = () => {
         }
     };
 
-    const toggleRegister = () => {
-        setShowRegister(!showRegister);
-    };
-
-    const toggleShowRegisterPopup = () => {
-        setShowRegisterPopup(!showRegisterPopup)
-        if (showLoginPopup) {
-            setShowLoginPopup(false);
-        }
-        setShowRegisterButton(false)
-        setShowLoginButton(true)
-    }
-
-    const toggleShowLoginPopup = () => {
-        setShowLoginPopup(!showLoginPopup)
-        if (showRegisterPopup) {
-            setShowRegisterPopup(false);
-        }
-        setShowRegisterButton(true)
-        setShowLoginButton(false)
-    }
 
     const contains = (parent, child) => {
         let node = child.parentNode;
@@ -84,14 +57,18 @@ const Header = () => {
     };
 
     const handleClickOutside = (event) => {
-        if (menuRef.current && !contains(menuRef.current, event.target)) {
+        if (
+            menuRef.current && !contains(menuRef.current, event.target)) {
             setShowMenu(false);
         }
-        /*
-        if (loginRef.current && !contains(loginRef.current, event.target)) {
+
+        if (
+            loginRef.current && !contains(loginRef.current, event.target) &&
+            loginPopRef.current && !contains(loginPopRef.current, event.target)
+        ) {
             setShowLogin(false);
         }
-         */
+
     };
 
     useEffect(() => {
@@ -270,16 +247,11 @@ const Header = () => {
                 <Link to="/modell">Modell</Link>
             </div>
 
-            <div className={`menu ${showLogin || showRegister ? 'show' : ''}`}>
+            <div ref={loginPopRef} className={`menu ${showLogin ? 'show' : ''}`}>
                 {!loggedIn ? (
-
-                        <>
-                            {showLoginButton && (
-                                <li>
-                                    <AuthForm/>
-                                </li>
-                            )}
-                        </>
+                    <li>
+                        <AuthForm onLogin={handleLogin} />
+                    </li>
                 ) : (
                     <li>
                         <button onClick={handleLogout}>Logout</button>
