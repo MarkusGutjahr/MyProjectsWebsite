@@ -6,6 +6,8 @@ import './mainPage.css';
 import Box from "./general_structure/Box";
 import './general_structure/aspect-ratio-styles.css';
 import './general_structure/Box.css';
+import BoxContainer from "./general_structure/BoxContainer";
+import './general_structure/MultiBoxes.css';
 
 const MainPage = () => {
     const items = [
@@ -18,23 +20,9 @@ const MainPage = () => {
         { to: "/modell", id: "modellIMG", text: "Modell" },
     ];
 
-    const trail = useTrail(items.length, {
-        from: { opacity: 0, transform: 'translateX(-100%)' },
-        to: { opacity: 1, transform: 'translateX(0%)' },
-        config: { tension: 200, friction: 20 },
-    });
-
     return (
-        <div className="main-page">
-            <div className="box-container">
-                {trail.map((style, index) => (
-                    <animated.div className="animBox" key={index} style={style}>
-                        <Box to={items[index].to} id={items[index].id}>
-                            {items[index].text}
-                        </Box>
-                    </animated.div>
-                ))}
-            </div>
+        <div className="main-page multiboxes">
+            <BoxContainer items={items} />
         </div>
     );
 };

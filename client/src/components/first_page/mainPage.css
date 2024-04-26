@@ -1,9 +1,4 @@
-.main-page {
-    display: flex;
-    padding: 2%;
-    flex: 1;
-    height: 85%;
-}
+
 
 #logoprev {
     background-image: url('/public/pageFiles/Mediengestaltung/LogoPreview.svg');

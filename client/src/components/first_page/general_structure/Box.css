@@ -13,7 +13,7 @@
     background-color: lightblue;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     cursor: pointer;
     margin: 1vw;
     text-decoration: none;
@@ -23,6 +23,7 @@
     text-transform: uppercase;
     border: 1px solid #ccc;
     border-radius: 4vh;
+
 }
 
 .box-text {

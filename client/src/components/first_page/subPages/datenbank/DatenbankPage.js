@@ -1,16 +1,18 @@
 import React from 'react';
 import {Link, Route, Routes} from "react-router-dom";
 import SERMPage from './SERMPage';
+import BoxContainer from "../../general_structure/BoxContainer";
+import '../../general_structure/MultiBoxes.css';
+import '../../general_structure/aspect-ratio-styles.css';
 
 const DatenbankPage = () => {
+    const items = [
+        {to:"serm", id:"serm", text:"SERM-Übung-Powerpoint"}
+    ]
+
     return (
-        <div>
-            <Routes>
-                <Route path="/serm" element={<SERMPage />} />
-            </Routes>
-            <div className="box-container">
-                <Link to="/serm" className="bigbox">SERM-Übung-Powerpoint</Link>
-            </div>
+        <div className="datenbank-page multiboxes">
+            <BoxContainer items={items}/>
         </div>
     );
 };
