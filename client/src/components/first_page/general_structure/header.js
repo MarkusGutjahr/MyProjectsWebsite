@@ -14,6 +14,7 @@ import SERMPage from "../subPages/datenbank/SERMPage";
 import LogoPage from "../subPages/mediengestaltung/LogoPage";
 import WebDesignPage from "../subPages/mediengestaltung/WebDesignPage";
 import './header.css';
+import AuthForm from "../serverRelated/AuthForm";
 
 const Header = () => {
     const location = useLocation();
@@ -271,32 +272,14 @@ const Header = () => {
 
             <div className={`menu ${showLogin || showRegister ? 'show' : ''}`}>
                 {!loggedIn ? (
-                    <>
+
                         <>
                             {showLoginButton && (
                                 <li>
-                                    <button onClick={toggleShowLoginPopup}>go to Login</button>
-                                </li>
-                            )}
-                            {showRegisterButton && (
-                                <li>
-                                    <button onClick={toggleShowRegisterPopup}>go to Register</button>
+                                    <AuthForm/>
                                 </li>
                             )}
                         </>
-
-                        {showLoginPopup && (
-                            <li>
-                                <Login onLogin={handleLogin}/>
-                            </li>
-                        )}
-
-                        {showRegisterPopup && (
-                            <li>
-                                <Register/>
-                            </li>
-                        )}
-                    </>
                 ) : (
                     <li>
                         <button onClick={handleLogout}>Logout</button>

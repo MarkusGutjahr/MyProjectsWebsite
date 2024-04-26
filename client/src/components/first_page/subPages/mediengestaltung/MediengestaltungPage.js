@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import BoxContainer from "../../general_structure/BoxContainer";
-import '../../general_structure/MultiBoxes.css';
+import '../../general_structure/BoxesStyles.css';
 
 const MediengestaltungPage = () => {
     const items = [

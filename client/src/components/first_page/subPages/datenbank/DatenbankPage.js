@@ -2,12 +2,12 @@ import React from 'react';
 import {Link, Route, Routes} from "react-router-dom";
 import SERMPage from './SERMPage';
 import BoxContainer from "../../general_structure/BoxContainer";
-import '../../general_structure/MultiBoxes.css';
+import '../../general_structure/BoxesStyles.css';
 import '../../general_structure/aspect-ratio-styles.css';
 
 const DatenbankPage = () => {
     const items = [
-        {to:"serm", id:"serm", text:"SERM-Übung-Powerpoint"}
+        {to:"serm", id:"sermprev", text:"SERM-Übung-Powerpoint"}
     ]
 
     return (

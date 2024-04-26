@@ -1,4 +1,9 @@
-
+.multiboxes {
+    display: flex;
+    padding: 2%;
+    flex: 1;
+    height: 85%;
+}
 
 #logoprev {
     background-image: url('/public/pageFiles/Mediengestaltung/LogoPreview.svg');
@@ -11,8 +16,6 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
 
 #webIMG {
     background-image: url('/public/pageFiles/Web/webIMG.jpg');

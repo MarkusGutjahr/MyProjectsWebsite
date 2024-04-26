@@ -28,8 +28,23 @@ const Box = ({to, id, children}) => {
                     ...springProps,
                     position: 'relative',
                     zIndex: zIndex,
+                    overflow: 'hidden'
                 }}
             >
+
+                <div
+                    className="gray-layer"
+                    style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        backgroundColor: 'rgba(0, 0, 0, 0.0)',
+                        zIndex: 1
+                    }}
+                ></div>
+
                 <div className="box-text">{children}</div>
             </animated.div>
         </Link>

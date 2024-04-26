@@ -70,8 +70,8 @@
     width: fit-content;
     z-index: 10;
     font-size: 2vw;
-    right: 0;
-    top: 10%;
+    right: 2%;
+    top: 100%;
 }
 
 .menu a {
@@ -107,4 +107,48 @@
 
 .header-container.hide {
     transform: translateY(-100%);
+}
+
+button {
+    width: 80px;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s, color 0.3s;
+    background-color: rgba(152, 251, 152, 0.6);
+}
+
+button:hover {
+    background-color: rgba(160, 32, 240, 0.6);
+    color: white;
+}
+
+button:active {
+    background-color: rgba(160, 32, 240, 1);
+    color: white;
+}
+
+.auth-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }

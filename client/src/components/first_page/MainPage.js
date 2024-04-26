@@ -2,12 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import {BrowserRouter as Router, Routes, Route, Link, useLocation} from 'react-router-dom';
 import { useTrail, useSpring, animated } from 'react-spring';
 import '../App.css';
-import './mainPage.css';
 import Box from "./general_structure/Box";
 import './general_structure/aspect-ratio-styles.css';
 import './general_structure/Box.css';
 import BoxContainer from "./general_structure/BoxContainer";
-import './general_structure/MultiBoxes.css';
+import './general_structure/BoxesStyles.css';
 
 const MainPage = () => {
     const items = [
@@ -21,7 +20,7 @@ const MainPage = () => {
     ];
 
     return (
-        <div className="main-page multiboxes">
+        <div className="multiboxes">
             <BoxContainer items={items} />
         </div>
     );
