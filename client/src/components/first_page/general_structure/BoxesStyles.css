@@ -101,6 +101,20 @@
     background-position: center;
 }
 
+#modellingprev{
+    background-image: url('/public/pageFiles/Modell/MG_Hero2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#shadingprev{
+    background-image: url('/public/pageFiles/Modell/render.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 
