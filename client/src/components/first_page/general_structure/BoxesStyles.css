@@ -58,3 +58,52 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#medienprojektprev{
+    background-image: url('/public/pageFiles/Web/mpprev.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#frontenddevelopmentprev{
+    background-image: url('/public/pageFiles/Web/frontendprev.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#blackjackprev{
+    background-image: url('/public/pageFiles/Software/blackjackprev.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#swepprev{
+    background-image: url('/public/pageFiles/Software/swepprev.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sermprev{
+    background-image: url('/public/pageFiles/Datenbank/sermprev.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#appprev{
+    background-image: url('/public/pageFiles/Mobile/appprev.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+

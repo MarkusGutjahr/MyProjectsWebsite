@@ -1,17 +1,16 @@
 import React from 'react';
 import "./softwarePage.css";
+import BoxContainer from "../../general_structure/BoxContainer";
+import '../../general_structure/BoxesStyles.css';
 
 const SoftwarePage = () => {
+    const items = [
+        {to:"/blackjack", id:"blackjackprev", text:"BlackJack Projekt"},
+        {to:"/swep", id:"swepprev", text:"Software Entwicklungs Projekt"},
+    ]
     return (
-        <div>
-            <h2>Software Page</h2>
-            <p>This is the Software page content.</p>
-            <object type="application/x-java-applet" width="100%" height="600" alt="jar file" title="jar title">
-                <param name="codebase" value="http://localhost:3000/pageFiles/Software/BlackJack/" />
-                <param name="archive" value="http://localhost:3000/pageFiles/Software/BlackJack/blackjack.jar" />
-                <param name="code" value="miniprojektBlackJack.Spielablauf" />
-                <noembed>Your browser does not support Java!</noembed>
-            </object>
+        <div className="software-page multiboxes">
+            <BoxContainer items={items}/>
         </div>
     );
 };

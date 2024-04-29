@@ -15,6 +15,9 @@ import LogoPage from "../subPages/mediengestaltung/LogoPage";
 import WebDesignPage from "../subPages/mediengestaltung/WebDesignPage";
 import './header.css';
 import AuthForm from "../serverRelated/AuthForm";
+import MPPage from "../subPages/web/MPPage";
+import FDPage from "../subPages/web/FDPage";
+import MowAppPage from "../subPages/mobile/MowAppPage";
 
 const Header = () => {
     const location = useLocation();
@@ -200,19 +203,37 @@ const Header = () => {
                         <Route path="/mediengestaltung" element={<MediengestaltungPageTitle/>}/>
                         <Route path="/audiovideo" element={<AudioVideoPageTitle/>}/>
                         <Route path="/modell" element={<ModellPageTitle/>}/>
+
                         <Route path="/serm" element={<SERMPageTitle/>}/>
                         <Route path="/logo" element={<LogoPageTitle/>}/>
                         <Route path="/webdesign" element={<WebDesignPageTitle/>}/>
+
+                        <Route path="/medienprojekt" element={<MPPageTitle/>}/>
+                        <Route path="/frontenddevelopment" element={<FDPageTitle/>}/>
+
+                        <Route path="/blackjack" element={<BlackjackPageTitle/>}/>
+                        <Route path="/swep" element={<SWEPPageTitle/>}/>
+
+                        <Route path="/mowapp" element={<MowAppPageTitle/>}/>
+
                     </Routes>
                 </div>
                 <div className="header-right">
                     <div ref={menuRef}>
                         <div className="menu-icon" onClick={toggleMenu}>
+                            {/*
                             <svg width="2vw" height="4vh" viewBox="0 0 11 12" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 11L5.5 11L11 11" stroke="white" stroke-width="2"/>
                                 <path d="M0 6L5.5 6L11 6" stroke="white" stroke-width="2"/>
                                 <path d="M0 1L5.5 1L11 1" stroke="white" stroke-width="2"/>
+                            </svg>
+                            */}
+                            <svg width="2vw" height="4vh" viewBox="0 0 9 10" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 9L4.5 9L9 9" stroke="white"/>
+                                <path d="M0 5L4.5 5L9 5" stroke="white"/>
+                                <path d="M0 1L4.5 1L9 1" stroke="white"/>
                             </svg>
                         </div>
                     </div>
@@ -306,6 +327,26 @@ const LogoPageTitle = () => {
 
 const WebDesignPageTitle = () => {
     return <h1 className="title">WebDesign Page</h1>;
+};
+
+const MPPageTitle = () => {
+    return <h1 className="title">Medienprojekt Page</h1>;
+};
+
+const FDPageTitle = () => {
+    return <h1 className="title">Frontend Development Page</h1>;
+};
+
+const BlackjackPageTitle = () => {
+    return <h1 className="title">Blackjack Page</h1>;
+};
+
+const SWEPPageTitle = () => {
+    return <h1 className="title">Software Entwicklungs Projekt Page</h1>;
+};
+
+const MowAppPageTitle = () => {
+    return <h1 className="title">Mobile Game Page</h1>;
 };
 
 export default Header;

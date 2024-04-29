@@ -7,7 +7,7 @@ const MediengestaltungPage = () => {
     const items = [
         {to: "/logo", id:"logoprev", text:"Logo"},
         {to: "/webdesign", id:"designprev", text:"Web Design"},
-    ]
+    ];
 
 
     return (

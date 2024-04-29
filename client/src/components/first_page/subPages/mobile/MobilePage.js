@@ -1,9 +1,14 @@
 import React from 'react';
+import BoxContainer from "../../general_structure/BoxContainer";
 
 const MobilePage = () => {
+    const items = [
+        {to:"/mowapp", id:"appprev", text:"Mobile Game"},
+    ];
+
     return (
-        <div>
-            <p>This is the Mobile page content.</p>
+        <div className="mobile-page multiboxes">
+            <BoxContainer items={items}/>
         </div>
     );
 };
