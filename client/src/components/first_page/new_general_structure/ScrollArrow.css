@@ -1,0 +1,41 @@
+.arrows {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: white;
+    fill: transparent;
+    stroke-width: 0.4em;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+.arrows path.arrow1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s;
+}
+
+.arrows path.arrow2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s;
+}
+
+.arrows path.arrow3 {
+    animation-delay:0s;
+    -webkit-animation-delay:0s;
+}
+
+
+

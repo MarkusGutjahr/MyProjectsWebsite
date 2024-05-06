@@ -29,7 +29,6 @@ const AppContent = () => {
 
     return (
         <div className="app">
-            <Header/>
             <div className="content">
                 <Routes>
                     <Route path="/" element={<MainPage/>}/>
@@ -55,8 +54,6 @@ const AppContent = () => {
 
                 </Routes>
             </div>
-            <Footer/>
-            <Background/>
         </div>
     );
 };
